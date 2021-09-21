@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+
+    <!-- This link connects this html file to the 'styles.css' file in the same folder -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Koh+Santepheap:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Model Viewer required script-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    
+    <!-- 3D Model Display Area -->
+    <div class="model-container">
+
+        <!-- Description -->
+        <div class="display-section description">
+            <h1>3D Model Name Here</h1>
+            <p>Spiel about what it is and why it's great</p>
+            <p>More points</p>
+
+            <h3>My insights</h3>
+            <ul>
+                <li>insight 1</li>
+                <li>insight 2</li>
+                <li>insight 3</li>
+            </ul>
+
+            <h3>Reasons why we should build this</h3>
+            <ul>
+                <li>Reasoning here lalalalla</li>
+                <li>Reasoning here lalalalla</li>
+            </ul>
+        </div>
+
+        <!-- 3D Model goes here-->
+        <div class="display-section">
+            <model-viewer src="assets\JL_Logo.glb" alt="A 3D model of the Jericho Lab logo" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls ios-src="assets\JL_Logo.usdz"></model-viewer>
+        </div>
+    </div>
+
+    <!-- 
+        If you want to add more 3D models to the page,
+        just copy and paste the html for [3D Model Display Area]
+    -->
+</body>
+</html>
