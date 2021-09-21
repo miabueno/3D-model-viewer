@@ -13,6 +13,14 @@ model-viewer {
 
 .model-container {
     display: flex;
+    flex-direction: row;
+}
+
+/* turns model container responsive (from inline in a row to stacked like a column */
+@media (max-width: 800px) {
+    .model-container {
+        flex-direction: column;
+    }
 }
 
 .display-section {
